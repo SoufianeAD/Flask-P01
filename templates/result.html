@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container p-5 mt-5">
+        <h2>Results :</h2>
+        <hr />
+        {% for key, value in result.items() %}
+            <table class="table table-striped">
+                <tr>
+                    <td>{{key}}</td>
+                    <td>: {{value}}</td>
+                </tr>
+            </table>
+        {% endfor %}
+    </div>
+</body>
+</html>
